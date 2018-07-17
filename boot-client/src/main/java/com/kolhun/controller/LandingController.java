@@ -12,14 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class LandingController {
 
-    @Autowired
-    private Environment env;
-
     private static final Logger logger = LoggerFactory.getLogger(LandingController.class);
 
     @RequestMapping
     public String indexPage() {
-        logger.debug("hello");
+        logger.debug("getting index page...");
         return "200";
     }
 }
