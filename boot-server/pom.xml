@@ -11,14 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>boot-server</artifactId>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-        <docker.workDir>${project.build.directory}</docker.workDir>
-        <docker.dockerfile>${project.basedir}/docker/Dockerfile</docker.dockerfile>
-        <docker.tag>sba-server</docker.tag>
-    </properties>
 
     <dependencies>
         <dependency>
