@@ -5,10 +5,18 @@
             <pattern>%d %-5p [%c] %m%n</pattern>
         </encoder>
     </appender>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>test-server.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %-5p [%c] %m%n</pattern>
+        </encoder>
+    </appender>
 
 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
     </root>
 
    <!--<include resource="org/springframework/boot/logging/logback/base.xml"/>-->
